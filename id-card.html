@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital ID Card</title>
+    <style>
+        body {
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        .id-card {
+            width: 320px;
+            background: white;
+            margin: 50px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+        .header {
+            background: #0a4d8c;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .photo {
+            margin-top: 15px;
+        }
+        .photo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #0a4d8c;
+        }
+        .details {
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .details p {
+            margin: 8px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .footer {
+            background: #0a4d8c;
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="id-card">
+    <div class="header">ABC Technologies Pvt Ltd</div>
+
+    <div class="photo">
+        <img src="Amaan.jpg" alt="Employee Photo">
+    </div>
+
+    <div class="details">
+        <p><span class="label">Name:</span> Amaan Malik</p>
+        <p><span class="label">Address:</span> Vadodara, Gujrat</p>
+        <p><span class="label">Blood Group:</span> O+</p>
+        <p><span class="label">Company:</span> ABC Technologies</p>
+    </div>
+
+    <div class="footer">
+        Employee ID Card
+    </div>
+</div>
+
+</body>
+</html>
