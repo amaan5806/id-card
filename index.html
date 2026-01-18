@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- VERY IMPORTANT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Digital ID Card</title>
+
     <style>
         body {
-            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background: #eaeaea;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
+
         .id-card {
-            width: 320px;
-            background: white;
-            margin: 50px auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 340px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
             overflow: hidden;
             text-align: center;
         }
+
         .header {
             background: #0a4d8c;
             color: white;
@@ -24,46 +37,55 @@
             font-size: 18px;
             font-weight: bold;
         }
+
         .photo {
             margin-top: 15px;
         }
+
         .photo img {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             border: 3px solid #0a4d8c;
+            object-fit: cover;
         }
+
         .details {
             padding: 15px;
             text-align: left;
-            font-size: 14px;
+            font-size: 15px;
         }
+
         .details p {
-            margin: 8px 0;
+            margin: 10px 0;
         }
+
         .label {
             font-weight: bold;
+            color: #333;
         }
+
         .footer {
             background: #0a4d8c;
             color: white;
-            padding: 8px;
-            font-size: 12px;
+            padding: 10px;
+            font-size: 13px;
         }
     </style>
 </head>
+
 <body>
 
 <div class="id-card">
     <div class="header">ABC Technologies Pvt Ltd</div>
 
     <div class="photo">
-        <img src="Amaan.jpg" alt="Employee Photo">
+        <img src="photo.jpg" alt="Employee Photo">
     </div>
 
     <div class="details">
-        <p><span class="label">Name:</span> Amaan Malik</p>
-        <p><span class="label">Address:</span> Vadodara, Gujrat</p>
+        <p><span class="label">Name:</span> Rahul Sharma</p>
+        <p><span class="label">Address:</span> Bengaluru, Karnataka</p>
         <p><span class="label">Blood Group:</span> O+</p>
         <p><span class="label">Company:</span> ABC Technologies</p>
     </div>
